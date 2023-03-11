@@ -1,0 +1,24 @@
+en el onCreate:
+ViewGroup viewGroup = (ViewGroup)findViewById(R.id.viewGroup);//aqui busca el id del LinearLayout pero lo cargas como ViewGroup
+eventosToggleButtons(viewGroup);
+
+private void eventosToggleButtons(ViewGroup layout) {
+        View child;
+        ToggleButton toggleButton;
+        for (int i = 0; i < layout.getChildCount(); i++) {
+
+            child = layout.getChildAt(i);
+
+            if (child instanceof ViewGroup) {
+                eventosToggleButtons((ViewGroup) child);
+            } else if ( child instanceof ToggleButton){
+                toggleButton = (ToggleButton) child;
+                toggleButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Toast.makeText(LoginActivity.this, "My id: "+ view.getId(), Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+        }
+    }

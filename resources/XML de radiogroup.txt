@@ -1,0 +1,145 @@
+ <RadioGroup
+            android:id="@+id/deal_detail_toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/deal_detail_toolbar"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+            <ToggleButton
+                android:id="@+id/tb6"
+                android:layout_width="65dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_maj"
+                android:checked="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/tb7"
+                android:layout_width="65dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_m"
+                android:checked="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/tb8"
+                android:layout_width="65dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_aug"
+                android:checked="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/tb9"
+                android:layout_width="65dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_sus"
+                android:checked="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/tb10"
+                android:layout_width="65dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_dim"
+                android:checked="false"
+                android:textOff=""
+                android:textOn="" />
+
+
+        </RadioGroup>
+
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/radioGroup"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+            <ToggleButton
+                android:id="@+id/tb6"
+                android:layout_width="55dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_seven"
+                android:checked="false"
+                android:onClick="check"
+                android:textOff=""
+                android:textOn="" />
+            <ToggleButton
+                android:id="@+id/tb7"
+                android:layout_width="55dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_sc"
+                android:checked="false"
+                android:onClick="check"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/tb8"
+                android:layout_width="55dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_maj7"
+                android:checked="false"
+                android:onClick="check"
+                android:textOff=""
+                android:textOn="" />
+            <ToggleButton
+                android:id="@+id/tb9"
+                android:layout_width="55dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background=""
+                android:checked="false"
+                android:onClick="check"
+                android:textOff=""
+                android:textOn="" />
+            <ToggleButton
+                android:id="@+id/tb10"
+                android:layout_width="55dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_m7"
+                android:checked="false"
+                android:onClick="check"
+                android:textOff=""
+                android:textOn="" />
+
+
+        </RadioGroup>

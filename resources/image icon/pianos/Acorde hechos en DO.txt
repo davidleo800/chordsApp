@@ -1,0 +1,23 @@
+maj --x
+m   --x
+aug --x
+sus --x
+dim --x
+maj7 --x
+m7 --x
+mMaj7 --x
+7  --x
+7-5 --x
+sus4 --x
+7sus4 --x
+-5 --x
+6 --x
+m6 --x
+6add9 --x
+9   ---x
+maj9 --x
+m9  --x
+add9 --x
+aug7--x
+augMaj7---x
+7sus2 --x

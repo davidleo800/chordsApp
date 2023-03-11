@@ -1,0 +1,27 @@
+ public void onRadioButtonClicked(View view) {
+        String select=spinner1.getSelectedItem().toString();
+        boolean checked = ((ToggleButton) view).isChecked();
+        switch(view.getId()) {
+            case R.id.tb1:
+                if (checked)
+
+
+                    break;
+            case R.id.tb2:
+                if (checked)
+                    //
+                    break;
+            case R.id.tb3:
+                if (checked)
+                    //
+                    break;
+            case R.id.tb4:
+                if (checked)
+                    //
+                    break;
+            case R.id.tb5:
+                if (checked)
+                    //
+                    break;
+        }
+    }

@@ -1,0 +1,61 @@
+metodo on create 
+
+
+        tb1=(ToggleButton)findViewById(R.id.tb1);
+        tb2=(ToggleButton)findViewById(R.id.tb2);
+        tb3=(ToggleButton)findViewById(R.id.tb3);
+        tb4=(ToggleButton)findViewById(R.id.tb4);
+        tb5=(ToggleButton)findViewById(R.id.tb5);
+        tb6=(ToggleButton)findViewById(R.id.tb6);
+        tb7=(ToggleButton)findViewById(R.id.tb7);
+        tb8=(ToggleButton)findViewById(R.id.tb8);
+        tb9=(ToggleButton)findViewById(R.id.tb9);
+        tb10=(ToggleButton)findViewById(R.id.tb10);
+
+        tb1.setOnCheckedChangeListener(toggleListener);
+        tb2.setOnCheckedChangeListener(toggleListener);
+        tb3.setOnCheckedChangeListener(toggleListener);
+        tb4.setOnCheckedChangeListener(toggleListener);
+        tb5.setOnCheckedChangeListener(toggleListener);
+        tb6.setOnCheckedChangeListener(toggleListener);
+        tb7.setOnCheckedChangeListener(toggleListener);
+        tb8.setOnCheckedChangeListener(toggleListener);
+        tb9.setOnCheckedChangeListener(toggleListener);
+        tb10.setOnCheckedChangeListener(toggleListener); 
+
+
+private CompoundButton.OnCheckedChangeListener toggleListener = new CompoundButton.OnCheckedChangeListener()
+    {
+        boolean avoidRecursions = false;
+
+        @Override
+        public void onCheckedChanged(CompoundButton buttonView, boolean isChecked)
+        {
+            if(avoidRecursions) return;
+            avoidRecursions = true;
+
+            // don't allow the un-checking
+            if(!isChecked)
+            {
+                buttonView.setChecked(true);
+                avoidRecursions = false;
+                return;
+            }
+
+            // un-check the previous checked button
+            if(buttonView != tb1 && tb1.isChecked()) tb1.setChecked(false);
+            else if(buttonView != tb2 && tb2.isChecked()) tb2.setChecked(false);
+            else if(buttonView != tb3 && tb3.isChecked()) tb3.setChecked(false);
+            else if(buttonView != tb4 && tb4.isChecked()) tb4.setChecked(false);
+            else if(buttonView != tb5 && tb5.isChecked()) tb5.setChecked(false);
+            else if(buttonView != tb6 && tb6.isChecked()) tb6.setChecked(false);
+            else if(buttonView != tb7 && tb7.isChecked()) tb7.setChecked(false);
+            else if(buttonView != tb8 && tb8.isChecked()) tb8.setChecked(false);
+            else if(buttonView != tb9 && tb9.isChecked()) tb9.setChecked(false);
+            else if(buttonView != tb10 && tb10.isChecked()) tb10.setChecked(false);
+
+            avoidRecursions = false;
+        }
+    };
+
+
